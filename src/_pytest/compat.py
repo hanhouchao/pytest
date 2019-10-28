@@ -206,7 +206,7 @@ def ascii_escaped(val):
     if isinstance(val, bytes):
         ret = _bytes_to_ascii(val)
     else:
-        ret = val.encode("unicode_escape").decode("ascii")
+        ret = val
     return _translate_non_printable(ret)
 
 
